@@ -155,7 +155,7 @@ Deploying certificates
 
 
 #. Create username and password for the indexer
-^^^^^^^^^^^^^^^^^^^^
+
   #. Set username and password.
 
       .. include:: /_templates/installations/indexer/common/create_username_password.rst
@@ -171,7 +171,7 @@ Starting the service
 Repeat this stage of the installation process for every Wazuh indexer node in your cluster. Then proceed with initializing your single-node or multi-node cluster in the next stage.
 
 
-3. Cluster initialization
+1. Cluster initialization
 -------------------------
 .. raw:: html
 

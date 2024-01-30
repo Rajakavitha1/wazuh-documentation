@@ -102,12 +102,12 @@ Install and configure the Wazuh indexer nodes.
 Repeat this stage of the installation process for every Wazuh indexer node in your cluster. Then proceed with initializing your single-node or multi-node cluster in the next stage.
 
 #. Create username and password for the indexer
-^^^^^^^^^^^^^^^^^^^^
+
   #. Set username and password.
 
       .. include:: /_templates/installations/indexer/common/create_username_password.rst
 
-3. Cluster initialization 
+1. Cluster initialization 
 -------------------------
 
 The final stage of installing the Wazuh indexer single-node or multi-node cluster consists of running the security admin script. 

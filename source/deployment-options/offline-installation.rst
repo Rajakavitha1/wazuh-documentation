@@ -167,7 +167,7 @@ Installing the Wazuh indexer
         # bash /usr/share/wazuh-indexer/bin/indexer-init.sh -i <WAZUH_INDEXER_IP_ADDRESS>
   
 #. Create username and password for the indexer
-^^^^^^^^^^^^^^^^^^^^
+
   #. Set username and password.
 
       .. include:: /_templates/installations/indexer/common/create_username_password.rst
