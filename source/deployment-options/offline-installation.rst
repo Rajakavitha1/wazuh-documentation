@@ -166,11 +166,17 @@ Installing the Wazuh indexer
 
         # bash /usr/share/wazuh-indexer/bin/indexer-init.sh -i <WAZUH_INDEXER_IP_ADDRESS>
   
-#. Run the following command to check that the installation is successful. Note that this command uses localhost, set your Wazuh indexer address if necessary. 
+#. Create username and password for the indexer
+^^^^^^^^^^^^^^^^^^^^
+  #. Set username and password.
+
+      .. include:: /_templates/installations/indexer/common/create_username_password.rst
+
+#. Run the following command to check that the installation is successful. Note that this command uses localhost, set your Wazuh indexer address if necessary and replace ``<INDEXER_USERNAME>`` and ``<INDEXER_PASSWORD>`` with the Wazuh indexer username and password that you set using the Keystore tool. 
 
    .. code-block:: console
 
-      # curl -XGET https://localhost:9200 -u admin:admin -k
+      # curl -XGET https://localhost:9200 -u <INDEXER_USERNAME>:<INDEXER_PASSWORD> -k
 
    Expand the output to see an example response.
 
@@ -474,7 +480,7 @@ Select your deployment type and follow the instructions to change the default pa
 
    .. group-tab:: All-in-one deployment
 
-      #. Use the Wazuh passwords tool to change all the internal users passwords.
+      #. Use the Wazuh passwords tool to change all the internal users passwords, this does not apply for the username and password of the indexer, these are set using the Keystore tool.
 
          .. code-block:: console
 
@@ -497,7 +503,7 @@ Select your deployment type and follow the instructions to change the default pa
 
    .. group-tab:: Distributed deployment
 
-      #. On `any Wazuh indexer node`, use the Wazuh passwords tool to change the passwords of the Wazuh indexer users.
+      #. On `any Wazuh indexer node`, use the Wazuh passwords tool to change the passwords of the Wazuh indexer users, this does not apply for the username and password of the indexer, these are set using the Keystore tool.
 
          .. code-block:: console
 

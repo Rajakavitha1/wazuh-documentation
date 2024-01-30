@@ -69,7 +69,7 @@ Wazuh dashboard
 Command line interface
 ----------------------
 
-Run the following command on any Wazuh central component that is allowed to authenticate to the Wazuh API. Replace ``<INDEXER_USERNAME>`` and ``<INDEXER_PASSWORD>`` with the indexer username and password:
+Run the following command on any Wazuh central component that is allowed to authenticate to the Wazuh API. Replace ``<INDEXER_USERNAME>`` and ``<INDEXER_PASSWORD>`` with the Wazuh indexer username and password that you set using the Keystore tool:
 
 .. code-block:: console
    :emphasize-lines: 4, 7

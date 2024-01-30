@@ -137,7 +137,7 @@ Select your deployment type and follow the instructions to change the default pa
 
    .. group-tab:: All-in-one deployment
 
-      #. Use the Wazuh passwords tool to change all the internal users' passwords.
+      #. Use the Wazuh passwords tool to change all the internal users passwords, this does not apply for the username and password of the indexer, these are set using the Keystore tool.
       
          .. code-block:: console
          
@@ -160,7 +160,7 @@ Select your deployment type and follow the instructions to change the default pa
     
    .. group-tab:: Distributed deployment
 
-      #. On `any Wazuh indexer node`, use the Wazuh passwords tool to change the passwords of the Wazuh indexer users. 
+      #. On `any Wazuh indexer node`, use the Wazuh passwords tool to change the passwords of the Wazuh indexer users, this does not apply for the username and password of the indexer, these are set using the Keystore tool. 
 
          .. code-block:: console
   

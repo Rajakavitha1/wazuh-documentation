@@ -40,6 +40,7 @@ All the available options to run the script are:
 +==============================================+=============================================================================================================+
 | -a / --change-all                            | Changes all the Wazuh indexer and Wazuh API user passwords and prints them on screen.                       |
 |                                              | To change API passwords -au|--admin-user and -ap|--admin-password are required.                             |
+|                                              | This does not apply for the username and password of the indexer, these are set using the Keystore tool.    |
 +----------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 | -A,  --api                                   | Change the Wazuh API password given the current password.                                                   |
 |                                              | Requires -u|--user, and -p|--password, -au|--admin-user and -ap|--admin-password.                           |
@@ -103,7 +104,7 @@ If you want to change the password for a Wazuh manager API user, run the script 
 Changing the passwords for all users
 ------------------------------------
 
-To generate and change passwords for all the Wazuh indexer users, run the script with the ``-a`` option:
+To generate and change passwords for all the Wazuh indexer users, run the script with the ``-a`` option, this does not apply for the username and password of the indexer, these are set using the Keystore tool:
 
   .. code-block:: console
 
@@ -124,7 +125,7 @@ To generate and change passwords for all the Wazuh indexer users, run the script
 
 If you use the tool in an all-in-one deployment, it automatically updates the passwords where necessary. If you use it in a distributed environment, you have to update the password on other components. See :ref:`Changing the passwords in a distributed environment <passwords_distributed>` for more details.
 
-On an all-in-one deployment, use options ``-a``, ``-au`` and ``-ap`` to also change the passwords for all the Wazuh indexer and the Wazuh manager API users.
+On an all-in-one deployment, use options ``-a``, ``-au`` and ``-ap`` to also change the passwords for all the Wazuh indexer and the Wazuh manager API users, this does not apply for the username and password of the indexer, these are set using the Keystore tool.
 
    .. code-block:: console
 
@@ -181,7 +182,7 @@ Changing the passwords in a distributed environment
 
 Follow the instructions below to change the passwords for all the Wazuh indexer users as well as the Wazuh manager API users.
 
-#. On `any Wazuh indexer node`, use the Wazuh passwords tool to change the passwords of the Wazuh indexer users.
+#. On `any Wazuh indexer node`, use the Wazuh passwords tool to change the passwords of the Wazuh indexer users, this does not apply for the username and password of the indexer, these are set using the Keystore tool.
 
    .. code-block:: console
 
