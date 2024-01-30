@@ -193,10 +193,11 @@ Testing the cluster installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Replace ``<INDEXER_USERNAME>``, ``<INDEXER_PASSWORD>`` and ``<WAZUH_INDEXER_IP_ADDRESS>`` with the Wazuh indexer username and password that you set using the Keystore tool commands:
-#. 
+
    .. code-block:: console
-         # /var/ossec/bin/wazuh-keystore -f indexer -k username -v <INDEXER_USERNAME>
-         # /var/ossec/bin/wazuh-keystore -f indexer -k password -v <INDEXER_PASSWORD>
+
+      # /var/ossec/bin/wazuh-keystore -f indexer -k username -v <INDEXER_USERNAME>
+      # /var/ossec/bin/wazuh-keystore -f indexer -k password -v <INDEXER_PASSWORD>
          
   And run the following commands to confirm that the installation is successful.
 
